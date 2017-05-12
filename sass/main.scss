@@ -1,0 +1,56 @@
+html, body {height: 100%;}
+#master-wrapper {
+	border: 1px solid #000;
+	overflow-y:auto;
+    height:100%;
+}
+#arrows a {
+	text-decoration: none;
+	text-height: 2em;
+}
+.prev {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	cursor:pointer;
+}
+.next {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	cursor:pointer;
+}
+#slideshow {
+	position: absolute;
+	top: 25%;
+	border: 2px solid #CCC;
+    height:50%;
+    z-index: 1000;
+    padding: 0;
+    background-color: black;
+    background-size: 100% 100%;
+}
+#start {
+	position: absolute;
+	top: 50%;
+}
+.dot {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+#picbutts {
+	position: absolute;
+	text-align: center;
+	bottom: 10%;
+	padding: 0;
+	margin: 0;
+}
+.hide {
+	visibility: hidden;
+}
