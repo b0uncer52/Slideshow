@@ -9,13 +9,14 @@ let activateButtons = function() {
 		let id = (this.id).replace("id", "");
 		slider.currentSlide(id);
 	});
+
 	$(".prev").on("click", function(event){
 		slider.changeSlide(-1);
 	});
 	$(".next").on("click", function(event) {
 		slider.changeSlide(1);
 	});
-	$("#slideshow").css("background-image", "url(../img/img1.jpg)");
+	$("#slideshow").css("background-image", "url(../img/img1.jpg)").fadeIn(1000);
 	slider.rotateSlides();
 };
 
