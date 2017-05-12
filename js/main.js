@@ -15,6 +15,7 @@ let activateButtons = function() {
 	$(".next").on("click", function(event) {
 		slider.changeSlide(1);
 	});
+	$("#slideshow").css("background-image", "url(../img/img1.jpg)");
 	slider.rotateSlides();
 };
 
